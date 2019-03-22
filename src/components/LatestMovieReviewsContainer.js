@@ -24,6 +24,6 @@ export default LatestMovieReviewsContainer extends Component {
   }
   
   render() {
-    return < ReviewList reviews={this.state.reviews} />
+    return < ReviewList reviews= {this.state.reviews} />
   }
 }
