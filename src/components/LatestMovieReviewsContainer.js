@@ -23,5 +23,7 @@ export default LatestMovieReviewsContainer extends Component {
     .then(reviews => this.setState({reviews}))
   }
   
-  render
+  render() {
+    return < ReviewList reviews={this.state.reviews} />
+  }
 }
