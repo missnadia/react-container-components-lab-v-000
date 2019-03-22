@@ -22,4 +22,6 @@ export default LatestMovieReviewsContainer extends Component {
     .then(resp => resp.json())
     .then(reviews => this.setState({reviews}))
   }
+  
+  render
 }
