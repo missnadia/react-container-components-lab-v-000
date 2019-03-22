@@ -13,7 +13,13 @@ export default LatestMovieReviewsContainer extends Component {
     super(props)
     
     this.state = {
-      
+      reviews: []
     }
+  }
+  
+  componentDidMount() {
+    fetch(URL)
+    .then(resp => resp.json())
+    .then(reviews => this.setState({reviews}))
   }
 }
